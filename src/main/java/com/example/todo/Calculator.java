@@ -11,7 +11,7 @@ public class Calculator {
                 frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                 frame.setSize(300, 200);
                 frame.setVisible(true);
-                System.out.println("Калькулятор успешно инициализирован и виден.");
+                System.out.println("Калькулятор успешно инициализирован и виден!");
             }
         });
     }
