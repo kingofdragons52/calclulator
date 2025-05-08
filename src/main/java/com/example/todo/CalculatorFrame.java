@@ -5,11 +5,17 @@ import java.awt.*;
 
 public class CalculatorFrame extends JFrame {
     public CalculatorFrame() {
-        setTitle("Калькулятор v0.3"); // Изменение 1: версия
-        CalculatorPanel panel = new CalculatorPanel(); // Изменение 2: добавили панель
+        setTitle("Калькулятор java-lessons.ru");
+        CalculatorPanel panel = new CalculatorPanel();
         add(panel);
         pack();
-        // setSize(350, 100); // Изменение 4: Закомментируем setSize, pack должен справиться
-        setLocationRelativeTo(null);
+
+        int width = 350;
+        int height = 350;
+
+        GraphicsDevice gd = GraphicsEnvironment.getLocalGraphicsEnvironment().getDefaultScreenDevice();
+        int screenWidth = gd.getDisplayMode().getWidth();
+        int screenHeight = gd.getDisplayMode().getHeight();
+        setBounds(screenWidth / 2 - width / 2, screenHeight / 2 - height / 2, width, height);
     }
 }
