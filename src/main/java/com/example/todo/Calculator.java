@@ -16,3 +16,14 @@ public class Calculator {
         });
     }
 }
+
+class CalculatorFrame extends JFrame {
+    public CalculatorFrame() {
+        setTitle("Калькулятор v0.1");
+        // CalculatorPanel panel = new CalculatorPanel(); // Пока не добавляем панель
+        // add(panel);
+        pack(); // Упакуем окно по содержимому (пока пустому)
+        setSize(350, 100); // Зададим размер
+        setLocationRelativeTo(null); // Центрируем
+    }
+}
