@@ -12,6 +12,7 @@ public class Calculator {
                 frame.setSize(300, 200);
                 frame.setVisible(true);
                 System.out.println("Калькулятор успешно инициализирован и виден.");
+                // сообщение о успешном запуске
             }
         });
     }
